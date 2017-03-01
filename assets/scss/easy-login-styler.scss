@@ -83,6 +83,12 @@ body{
             clear: both;
         }
     }
+    &.clef-login-form{
+        #login{
+            width:100% !important;
+            min-width: 430px;
+        }
+    }
 
     //start media query
     @media screen and (max-width: $medium){
@@ -100,6 +106,10 @@ body{
         .easy-login-styler-bg{
             background: none !important;
             display: none !important;
+        }
+        &.clef-login-form #login form{
+            max-width: 400px;
+            margin: 0 auto;
         }
     }
 }
