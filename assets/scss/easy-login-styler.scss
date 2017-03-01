@@ -1,0 +1,105 @@
+@import 'compass';
+$medium : 1024px;
+$tablet : 768px;
+
+body{
+    font-size: 14px;
+    display: table;
+    width: 100%;
+
+    .easy-login-styler-title{
+        font-weight: 500;
+        color: #484848;
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    #login, .easy-login-styler-bg{
+        display: table-cell;
+        border: 0px;
+    }
+    #login{
+        float: left;
+        background: #fff;
+        // height: 100%;
+        width:100%;
+        min-height: 100%;
+        min-height: 100vh;
+        margin-left: 0px;
+        padding: 50px 30px;
+        @include box-sizing( border-box );
+
+        h1 a{
+            @include background-size( cover );
+        }
+
+        form{
+            @include box-shadow( none );
+            padding: 0px;
+            label{
+                font-size: 14px;
+                font-weight: 600;
+                color: #484848;
+            }
+            input:not(#rememberme){
+                margin-top: 5px;
+            }
+        }
+        p.submit{
+            clear: both;
+            float: none;
+            display: block;
+            width: 100%;
+            padding: 20px 0px;
+            .button{
+                font-size: 15px;
+                width: 100%;
+                float: none;
+                padding: 4px;
+                height: auto;
+            }
+        }
+
+        #nav, #backtoblog{
+            padding: 0px;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+
+    .easy-login-styler-bg{
+        // float: right;
+        width: 67%;
+        min-height: 100%;
+        background: #ffffff;
+        background-image: url( '../images/default-bg.jpg' );
+        background-repeat: no-repeat;
+        @include box-sizing( border-box );
+        @include background-size( cover );
+        &:after{
+            display: block;
+            content: " ";
+            clear: both;
+        }
+    }
+
+    //start media query
+    @media screen and (max-width: $medium){
+        .easy-login-styler-bg{
+            width: 55%;
+        }
+    }
+    @media screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait){
+        .easy-login-styler-bg{
+            background: none !important;
+            display: none !important;
+        }
+    }
+    @media screen and (max-width: $tablet){
+        .easy-login-styler-bg{
+            background: none !important;
+            display: none !important;
+        }
+    }
+}
