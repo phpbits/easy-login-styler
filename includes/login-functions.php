@@ -37,6 +37,19 @@ if( !function_exists( 'easy_login_styler_title' ) ):
     }
 endif;
 
+if( !function_exists( 'easy_login_styler_url' ) ):
+    add_filter( 'login_headerurl', 'easy_login_styler_url' );
+    function easy_login_styler_url( $url ){
+        $options = get_option( 'easy_login_styler_settings' );
+
+        if( isset( $options['logo'] ) && !empty( $options['logo'] ) ){
+            $url = esc_url( home_url( '/' ) );
+        }
+
+        return $url;
+    }
+endif;
+
 if( !function_exists( 'easy_login_styler_footer' ) ):
     add_action( 'login_footer', 'easy_login_styler_footer' );
     function easy_login_styler_footer( $input_id ){ ?>
