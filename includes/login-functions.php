@@ -50,6 +50,19 @@ if( !function_exists( 'easy_login_styler_url' ) ):
     }
 endif;
 
+if( !function_exists( 'easy_login_styler_alt' ) ):
+    add_filter( 'login_headertitle', 'easy_login_styler_alt' );
+    function easy_login_styler_alt( $alt ){
+        $options = get_option( 'easy_login_styler_settings' );
+
+        if( isset( $options['logo'] ) && !empty( $options['logo'] ) ){
+            $alt = get_bloginfo( 'name' );
+        }
+
+        return $alt;
+    }
+endif;
+
 if( !function_exists( 'easy_login_styler_footer' ) ):
     add_action( 'login_footer', 'easy_login_styler_footer' );
     function easy_login_styler_footer( $input_id ){ ?>
