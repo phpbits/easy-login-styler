@@ -1,4 +1,4 @@
-# [Easy Login Styler](https://wordpress.org/plugins/easy-login-styler/) #
+# [Easy Login Styler for WordPress](https://wordpress.org/plugins/easy-login-styler/) #
 
 ### Welcome to our GitHub Repository
 
