@@ -93,6 +93,9 @@ body{
     .qm-peek{
         display: none !important;
     }
+    .wp-social-login-widget{
+        text-align: center;
+    }
 
     //start media query
     @media screen and (max-width: $medium){
