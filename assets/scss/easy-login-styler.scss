@@ -90,6 +90,10 @@ body{
         }
     }
 
+    .qm-peek{
+        display: none !important;
+    }
+
     //start media query
     @media screen and (max-width: $medium){
         .easy-login-styler-bg{
