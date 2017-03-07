@@ -12,7 +12,7 @@ Just add logo and background image; and you'll get a beautiful & simply responsi
 
 == Description ==
 
-Get the simpliest WordPress login page that you can easily white labeled just by uploading logo and background image. That's it!
+Get the simplest WordPress login page that you can easily white labeled just by uploading logo and background image. That's it!
 
 [vimeo https://vimeo.com/206392470]
 

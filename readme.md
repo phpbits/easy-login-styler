@@ -2,7 +2,7 @@
 
 ### Welcome to our GitHub Repository
 
-Easy Login Styler for WordPress provides the simpliest WordPress login page that you can easily white labeled just by uploading logo and background image. That's it!
+Easy Login Styler for WordPress provides the simplest WordPress login page that you can easily white labeled just by uploading logo and background image. That's it!
 
 In need of little customization apart from the images? Use the Custom CSS field and style your own login screen preference.
 
