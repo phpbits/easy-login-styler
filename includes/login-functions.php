@@ -4,11 +4,16 @@
  *
  */
 
+if( !function_exists( 'easy_login_styler_enqueue' ) ):
+    add_action( 'login_enqueue_scripts', 'easy_login_styler_enqueue', 10 );
+    function easy_login_styler_enqueue(){
+        wp_enqueue_style( 'login-styler', EASY_LOGIN_STYLER_PLUGIN_URL . '/assets/css/easy-login-styler.css', false );
+    }
+endif;
 if( !function_exists( 'easy_login_styler_head' ) ):
     add_action( 'login_head', 'easy_login_styler_head' );
     function easy_login_styler_head(){
         $options = get_option( 'easy_login_styler_settings' );?>
-        <link rel="stylesheet" type="text/css" href="<?php echo EASY_LOGIN_STYLER_PLUGIN_URL;?>/assets/css/easy-login-styler.css" />
     <?php
         if( is_array( $options ) && !empty( $options ) ){ ?>
             <style type="text/css">

@@ -14,7 +14,12 @@ Just add logo and background image; and you'll get a beautiful & simply responsi
 
 Get the simpliest WordPress login page that you can easily white labeled just by uploading logo and background image. That's it!
 
+[vimeo https://vimeo.com/206392470]
+
 In need of little customization apart from the images? Use the Custom CSS field and style your own login screen preference.
+
+If you like to contribute, report issue or have suggestions, you can find the development version on <a href="https://github.com/phpbits/easy-login-styler" target="_blank">Github</a>.
+
 
 <strong>More information</strong>
 
