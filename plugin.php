@@ -102,7 +102,9 @@ final class Easy_Login_Styler {
 	private function includes() {
 		require_once EASY_LOGIN_STYLER_PLUGIN_DIR . 'includes/login-functions.php';
 		if( is_admin() ){
+			require_once EASY_LOGIN_STYLER_PLUGIN_DIR . 'includes/install.php';
 			require_once EASY_LOGIN_STYLER_PLUGIN_DIR . 'includes/admin/settings.php';
+			require_once EASY_LOGIN_STYLER_PLUGIN_DIR . 'includes/admin/notices.php';
 		}
 	}
 
