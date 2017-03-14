@@ -48,6 +48,9 @@ e.g.
 
 == Changelog ==
 
+= 1.0.1 =
+* Fix Typo Error
+
 = 1.0 =
 * Initial Plugin release
 

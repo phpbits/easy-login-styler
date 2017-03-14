@@ -3,7 +3,7 @@
  * Plugin Name: Easy Login Styler
  * Plugin URI: https://wordpress.org/plugins/easy-login-styler/
  * Description: Simple Login Page Customization.
- * Version: 1.0
+ * Version: 1.0.1
  * Author: Phpbits Creative Studio
  * Author URI: https://phpbits.net/
  * Text Domain: easy-login-styler
@@ -68,12 +68,12 @@ final class Easy_Login_Styler {
 
 		// Plugin version.
 		if ( ! defined( 'EASY_LOGIN_STYLER_PLUGIN_NAME' ) ) {
-			define( 'EASY_LOGIN_STYLER_PLUGIN_NAME', 'Easy Rich Text Widget' );
+			define( 'EASY_LOGIN_STYLER_PLUGIN_NAME', 'Easy Login Styler' );
 		}
 
 		// Plugin version.
 		if ( ! defined( 'EASY_LOGIN_STYLER_VERSION' ) ) {
-			define( 'EASY_LOGIN_STYLER_VERSION', ' 1.0' );
+			define( 'EASY_LOGIN_STYLER_VERSION', '1.0.1' );
 		}
 
 		// Plugin Folder Path.
