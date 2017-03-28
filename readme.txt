@@ -1,7 +1,7 @@
 === Easy Login Styler ===
 Contributors: phpbits
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FMKC2SLPTULP8
-Tags: widgets, widget, sidebars, sidebar, custom widget area
+Tags: login, login page, white label, custom login, branding, custom login, admin login, log in
 Requires at least: 4.0
 Tested up to: 4.8
 Stable tag: 1.0
@@ -47,6 +47,9 @@ e.g.
 3. Settings Page
 
 == Changelog ==
+
+= 1.0.2 =
+* Update tags
 
 = 1.0.1 =
 * Fix Typo Error
