@@ -7,7 +7,7 @@
 if( !function_exists( 'easy_login_styler_enqueue' ) ):
     add_action( 'login_enqueue_scripts', 'easy_login_styler_enqueue', 10 );
     function easy_login_styler_enqueue(){
-        wp_enqueue_style( 'login-styler', EASY_LOGIN_STYLER_PLUGIN_URL . '/assets/css/easy-login-styler.css', false );
+        wp_enqueue_style( 'login-styler', EASY_LOGIN_STYLER_PLUGIN_URL . 'assets/css/easy-login-styler.css', false );
     }
 endif;
 if( !function_exists( 'easy_login_styler_head' ) ):

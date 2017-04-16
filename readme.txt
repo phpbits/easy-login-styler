@@ -1,4 +1,4 @@
-=== Easy Login Styler ===
+=== Easy Login Styler - White Label Admin Login Page for WordPress ===
 Contributors: phpbits
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FMKC2SLPTULP8
 Tags: login, login page, white label, custom login, branding, custom login, admin login, log in
@@ -8,11 +8,11 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Just add logo and background image; and you'll get a beautiful & simply responsive WordPress login page!
+Easiest WordPress white label admin login page! Just add logo and background image; and you'll get a beautiful & simply responsive WordPress login page!
 
 == Description ==
 
-Get the simplest WordPress login page that you can easily white labeled just by uploading logo and background image. That's it!
+Get the simplest WordPress login page that you can easily white label just by uploading logo and background image. That's it! You'll have a brand new admin login page with custom branding on less than 5 seconds!
 
 [vimeo https://vimeo.com/206392470]
 
@@ -47,6 +47,9 @@ e.g.
 3. Settings Page
 
 == Changelog ==
+
+= 1.0.3 =
+* Google reCAPTCHA plugin CSS compatibility fixes
 
 = 1.0.2 =
 * Update tags

@@ -1,8 +1,8 @@
-# [Easy Login Styler for WordPress](https://wordpress.org/plugins/easy-login-styler/) #
+# [Easy Login Styler - White Label Admin Login Page for WordPress](https://wordpress.org/plugins/easy-login-styler/) #
 
 ### Welcome to our GitHub Repository
 
-Easy Login Styler for WordPress provides the simplest WordPress login page that you can easily white labeled just by uploading logo and background image. That's it!
+Easy Login Styler for WordPress provides the simplest WordPress white label admin login page. Just upload logo and background image for branding and you'll get a brand new login page on less than 5 seconds!
 
 In need of little customization apart from the images? Use the Custom CSS field and style your own login screen preference.
 

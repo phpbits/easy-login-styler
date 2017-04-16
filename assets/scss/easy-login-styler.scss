@@ -45,6 +45,9 @@ body{
             input:not(#rememberme){
                 margin-top: 5px;
             }
+            div.g-recaptcha{
+                margin-left: 0px;
+            }
         }
         p.submit{
             clear: both;
