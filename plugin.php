@@ -73,7 +73,7 @@ final class Easy_Login_Styler {
 
 		// Plugin version.
 		if ( ! defined( 'EASY_LOGIN_STYLER_VERSION' ) ) {
-			define( 'EASY_LOGIN_STYLER_VERSION', '1.0.1' );
+			define( 'EASY_LOGIN_STYLER_VERSION', '1.0.3' );
 		}
 
 		// Plugin Folder Path.
