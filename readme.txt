@@ -48,6 +48,9 @@ e.g.
 
 == Changelog ==
 
+= 1.0.4 =
+* Fix interim-login pop-up CSS issue
+
 = 1.0.3 =
 * Google reCAPTCHA plugin CSS compatibility fixes
 
