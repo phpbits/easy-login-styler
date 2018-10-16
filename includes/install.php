@@ -8,6 +8,20 @@
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+//check if free version is activated
+if( !function_exists( 'easy_login_styler_upgraded' ) ){
+	add_action( 'admin_notices', 'easy_login_styler_upgraded' );
+	function easy_login_styler_upgraded(){
+		if( is_plugin_active( 'easy-login-styler/plugin.php' ) && is_plugin_active( 'easy-login-styler-pro/plugin.php' ) ){ ?>
+			<div class="easyloginstyler_activated_notice notice-error notice" style="box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);">
+				<p>
+					<?php _e( 'Please deactivate <strong>Easy Login Styler</strong> Plugin, it may cause issue with the Easy Login Styler Pro plugin version. Thanks!', 'easy-login-styler' );?>
+				</p>
+			</div>
+		<?php }
+	}
+}
+
 //add settings link on plugin page
 if( !function_exists( 'easy_login_styler_filter_plugin_actions' ) ){
   add_action( 'plugin_action_links_' . plugin_basename( EASY_LOGIN_STYLER_PLUGIN_FILE ) , 'easy_login_styler_filter_plugin_actions' );
