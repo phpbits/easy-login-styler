@@ -100,6 +100,22 @@ body{
         text-align: center;
     }
 
+    //interim-login
+    &.interim-login{
+        #login{
+            padding: 15px 20px;
+            h1{
+                text-align: center;
+                a{
+                    height: 84px;
+                    width: 84px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+
     //start media query
     @media screen and (max-width: $medium){
         .easy-login-styler-bg{
