@@ -156,7 +156,7 @@ if( !function_exists( 'easy_login_styler_options_page' ) ):
 									</li>
 								</ul>
 								<p style="text-align: center;">
-									<a class="button-primary" href="https://easyloginwp.com/?utm_source=wordpressadmin&amp;utm_medium=widget&amp;utm_campaign=procta" target="_blank"><?php _e( 'Upgrade to Easy Login Styler Pro', 'easy-login-styler' );?></a>
+									<a class="button-primary" href="https://easyloginwp.com/?utm_source=wordpressadmin&amp;utm_medium=widget&amp;utm_campaign=procta" style="background: linear-gradient(to right,#8958e6,#c4709c) !important; border: 0px; text-shadow: none; box-shadow: none; border-radius: 20px;padding: 5px 20px;height: auto;" target="_blank"><?php _e( 'Upgrade to Easy Login Styler Pro', 'easy-login-styler' );?></a>
 								</p>
 							</div>
 						</div>
