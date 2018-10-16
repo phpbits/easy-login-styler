@@ -14,7 +14,7 @@ Easiest WordPress white label admin login page! Just add logo and background ima
 
 Get the simplest WordPress white label login page that you can easily customize just by uploading logo and background image. That's it! You'll have a brand new admin login page with custom branding on less than 5 seconds!
 
-[vimeo https://vimeo.com/206392470]
+https://vimeo.com/206392470
 
 In need of little customization apart from the images? Use the Custom CSS field and style your own login screen preference.
 
@@ -47,6 +47,9 @@ e.g.
 3. Settings Page
 
 == Changelog ==
+
+= 1.0.5 =
+* Update readme for video to show
 
 = 1.0.4 =
 * Fix interim-login pop-up CSS issue
