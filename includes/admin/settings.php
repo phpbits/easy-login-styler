@@ -59,6 +59,7 @@ if( !function_exists( 'easy_login_styler_options_page' ) ):
 			<h1>
 				<?php _e( 'Easy Login Styler', 'easy-login-styler' ); ?>
 				<a href="<?php echo esc_url( apply_filters( 'easy_login_styler_support_url', 'https://wordpress.org/support/plugin/easy-login-styler' ) ); ?>" target="_blank" class="page-title-action"><?php _e( 'Support', 'easy-login-styler' ); ?></a>
+				<a href="<?php echo esc_url( apply_filters( 'easy_login_styler_upgrade_url', 'https://easyloginwp.com/?utm_source=upgrade_settings_button' ) ); ?>" target="_blank" class="page-title-action"><?php _e( 'Upgrade to Pro', 'easy-login-styler' ); ?></a>
 			</h1>
 
 			<div id="easy-login-styler-settings-messages-container"></div>
@@ -125,9 +126,48 @@ if( !function_exists( 'easy_login_styler_options_page' ) ):
 					</div>
 
 					<div id="postbox-container-1" class="postbox-container">
-						<a href="http://widget-options.com/?utm_source=easy-login-admin&amp;utm_medium=sidebar&amp;utm_campaign=easy-login-admin-banner" target="_blank"><img src="<?php echo EASY_LOGIN_STYLER_PLUGIN_URL;?>/assets/images/banner-widget-options-wordpress.jpg" /></a><br /><br />
-						<a href="http://phpbits.net/plugin/mobi/?utm_source=easy-login-admin&amp;utm_medium=sidebar&amp;utm_campaign=easy-login-admin-banner" target="_blank"><img src="<?php echo EASY_LOGIN_STYLER_PLUGIN_URL;?>/assets/images/banner-mobi.jpg" /></a><br /><br />
-						<a href="https://wordpress.org/plugins/forty-four/" target="_blank"><img src="<?php echo EASY_LOGIN_STYLER_PLUGIN_URL;?>/assets/images/banner-404.jpg" /></a>
+						<div id="easy-login-styler-sidebar-widget-support" class="postbox easy-login-styler-sidebar-widget" style="border-color: #9f60ca; border-width: 3px;">
+							<h3 class="hndle ui-sortable-handle"><span><?php _e( 'Upgrade to Easy Login Styler Pro', 'easy-login-styler' );?></span></h3>
+							<div class="inside">
+								<p>
+									<?php _e( '<strong>Unlock all features!</strong> Get the easiest login page that will match your branding to the fullest. Premium feature includes: ', 'easy-login-styler' );?>
+								</p>
+								<ul style="list-style: outside; padding-left: 15px;">
+									<li>
+										<?php _e( 'Predesigned Templates', 'easy-login-styler' );?>
+									</li>
+									<li>
+										<?php _e( 'Custom Layout Selection', 'easy-login-styler' );?>
+									</li>
+									<li>
+										<?php _e( 'Change Text & Labels', 'easy-login-styler' );?>
+									</li>
+									<li>
+										<?php _e( 'Custom Colors and Styling', 'easy-login-styler' );?>
+									</li>
+									<li>
+										<?php _e( 'Background Slideshow', 'easy-login-styler' );?>
+									</li>
+									<li>
+										<?php _e( 'Custom Login Redirect', 'easy-login-styler' );?>
+									</li>
+									<li>
+										<?php _e( 'and more pro-only features', 'easy-login-styler' );?>
+									</li>
+								</ul>
+								<p style="text-align: center;">
+									<a class="button-primary" href="https://easyloginwp.com/?utm_source=wordpressadmin&amp;utm_medium=widget&amp;utm_campaign=procta" target="_blank"><?php _e( 'Upgrade to Easy Login Styler Pro', 'easy-login-styler' );?></a>
+								</p>
+							</div>
+						</div>
+
+						<div id="easy-login-styler-sidebar-widget-support" class="postbox easy-login-styler-sidebar-widget">
+							<h3 class="hndle ui-sortable-handle"><span><?php _e( 'Watch Pro Version Preview', 'easy-login-styler' );?></span></h3>
+							<div class="inside">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/CEvDwuNq5t4" frameborder="0" style="max-width: 100%;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+						</div>
+
 					</div>
 
 				</div>
