@@ -17,6 +17,20 @@ if( !function_exists( 'easy_login_styler_admin_notices' ) ):
         if( !current_user_can( 'update_plugins' ) )
             return;
 
+        global $pagenow;
+
+        if( 'options-general.php' != $pagenow ){
+            return;
+        }
+
+        if( 'options-general.php' == $pagenow && !isset( $_GET['page'] ) ){
+            return;
+        }
+
+        if( 'options-general.php' == $pagenow && isset( $_GET['page'] ) && $_GET['page'] != 'easy_login_styler_plugin_settings' ){
+            return;
+        }
+
         $install_date   = get_option( 'easy_login_styler_installDate' );
         $saved          = get_option( 'easy_login_styler_RatingDiv' );
         $display_date   = date( 'Y-m-d h:i:s' );
