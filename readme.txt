@@ -48,6 +48,9 @@ e.g.
 
 == Changelog ==
 
+= 1.0.6 =
+* Add support for pro version
+
 = 1.0.5 =
 * Update readme for video to show
 
