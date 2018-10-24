@@ -76,7 +76,7 @@ class EasyLoginStyler_Dashboard_Welcome {
 				<h3><?php echo esc_html__( 'Checkout the Pro Version Preview', 'easy-login-styler' ); ?></h3>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/CEvDwuNq5t4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				<p>
-					<a href="<?php echo esc_url( admin_url( 'options-general.php?page=easy_login_styler_plugin_settings' ) ); ?>" class="button button-primary"><?php echo esc_html__( 'Check Pro Version Features', 'easy-login-styler' ); ?></a>
+					<a href="https://easyloginwp.com/?utm_source=welcome-upgrade" target="_blank" class="button button-primary"><?php echo esc_html__( 'Check Pro Version Features', 'easy-login-styler' ); ?></a>
 				</p>
 			</div>
 		</div>
