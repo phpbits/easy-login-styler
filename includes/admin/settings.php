@@ -87,7 +87,7 @@ if( !function_exists( 'easy_login_styler_options_page' ) ):
 												&nbsp;&nbsp;<a href="#" class="easy_login_styler_remove" data-field=".easy_login_styler_logo_fld" data-preview=".easy_login_styler_logo_preview"  ><?php _e( 'Remove Logo Image', 'easy-login-styler' );?></a>
 											<?php endif; ?>
 											<input type="hidden" class="easy_login_styler_logo_fld" name="easy_login_styler_settings[logo]" value="<?php echo ( is_array( $options ) && isset( $options['logo'] ) ) ? $options['logo'] : '';?>" />
-											<div class="easy_login_styler_logo_preview"><?php echo ( is_array( $options ) && isset( $options['logo'] ) && !empty( $options['logo'] ) ) ? '<img src="'. $options['logo'] .'">' : '';?></div>
+											<div class="easy_login_styler_logo_preview"><?php echo ( is_array( $options ) && isset( $options['logo'] ) && !empty( $options['logo'] ) ) ? '<img src="'. wp_get_attachment_image_url($options['logo'], 'full') .'">' : '';?></div>
 										</td>
 									</tr>
 									<tr>
@@ -100,7 +100,7 @@ if( !function_exists( 'easy_login_styler_options_page' ) ):
 												&nbsp;&nbsp;<a href="#" class="easy_login_styler_remove" data-field='.easy_login_styler_image_fld' data-preview=".easy_login_styler_image_preview" ><?php _e( 'Remove Background Image', 'easy-login-styler' );?></a>
 											<?php endif; ?>
 											<input type="hidden" class="easy_login_styler_image_fld" name="easy_login_styler_settings[background]" value="<?php echo ( is_array( $options ) && isset( $options['background'] ) ) ? $options['background'] : '';?>" />
-											<div class="easy_login_styler_image_preview"><?php echo ( is_array( $options ) && isset( $options['background'] ) && !empty( $options['background'] ) ) ? '<img src="'. $options['background'] .'">' : '';?></div>
+											<div class="easy_login_styler_image_preview"><?php echo ( is_array( $options ) && isset( $options['background'] ) && !empty( $options['background'] ) ) ? '<img src="'. wp_get_attachment_image_url($options['background'], 'full') .'">' : '';?></div>
 										</td>
 									</tr>
 									<tr>
@@ -225,7 +225,7 @@ if( !function_exists( 'easy_login_styler_options_page' ) ):
 			        file__frame.on( 'select', function() {
 			          // We set multiple to false so only get one image from the uploader
 			          attachment = file__frame.state().get('selection').first().toJSON();
-			          jQuery( fld ).val( attachment.url );
+			          jQuery( fld ).val( attachment.id );
 			          jQuery( preview ).html('<img src="'+ attachment.url +'" />');
 			          // jQuery('#wpautbox_user_image_url').html('<img src="'+ attachment.url +'" width="120"/><br />');
 			          // Do something with attachment.id and/or attachment.url here

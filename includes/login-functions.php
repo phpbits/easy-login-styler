@@ -18,10 +18,10 @@ if( !function_exists( 'easy_login_styler_head' ) ):
         if( is_array( $options ) && !empty( $options ) ){ ?>
             <style type="text/css">
                 <?php if( isset( $options['background'] ) && !empty( $options['background'] ) ){
-                    echo 'body .easy-login-styler-bg{ background-image: url("'. $options['background'] .'") !important; }';
+                    echo 'body .easy-login-styler-bg{ background-image: url("'. wp_get_attachment_image_url($options['background'], 'full') .'") !important; }';
                 }
                 if( isset( $options['logo'] ) && !empty( $options['logo'] ) ){
-                    echo 'body #login h1 a{ background-image: url("'. $options['logo'] .'") !important; }';
+                    echo 'body #login h1 a{ background-image: url("'. wp_get_attachment_image_url($options['logo'], 'full') .'") !important; }';
                 }
                 if( isset( $options['css'] ) && !empty( $options['css'] ) ){
                     echo esc_textarea( $options['css'] );
